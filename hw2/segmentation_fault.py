@@ -13,6 +13,7 @@ import resource
 
 def recursion(variable: int):
     """Infinite recursion
+
     :param variable
     """
     recursion(variable + 1)
