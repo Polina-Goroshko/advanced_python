@@ -9,8 +9,9 @@ Second thread outputs odd numbers.
 
 Type of synchronization object: Event.
 """
+from threading import Event
 from time import sleep
-from threading import Thread, Event
+from threading import Thread
 
 event = Event()
 
@@ -52,8 +53,7 @@ def odd_print():
 
 
 def checker():
-    """
-    Compares a final list with an ideal one.
+    """Compares a final list with an ideal one.
     In case, when they are not equal, raises an Exception.
     """
     if result != [value for value in range(TOTAL_RANGE)]:

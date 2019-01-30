@@ -47,8 +47,7 @@ def odd_print():
 
 
 def checker():
-    """
-    Compares a final list with an ideal one.
+    """Compares a final list with an ideal one.
     In case, when they are not equal, raises an Exception.
     """
     if result != [value for value in range(TOTAL_RANGE)]:

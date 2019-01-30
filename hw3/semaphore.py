@@ -9,9 +9,9 @@ Second thread outputs odd numbers.
 
 Type of synchronization object: Semaphore.
 """
+from threading import Semaphore
 from time import sleep
 from threading import Thread
-from threading import Semaphore
 
 semaphore = Semaphore(value=1)
 
@@ -53,8 +53,7 @@ def odd_print():
 
 
 def checker():
-    """
-    Compares a final list with an ideal one.
+    """Compares a final list with an ideal one.
     In case, when they are not equal, raises an Exception.
     """
 
