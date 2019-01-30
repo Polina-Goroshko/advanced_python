@@ -21,9 +21,8 @@ TOTAL_RANGE = 101
 
 
 def even_print():
-    """
-        Prints even values.
-    """
+    """Prints even values."""
+
     for value in range(TOTAL_RANGE):
 
         if value % 2 == 0:
@@ -40,9 +39,8 @@ def even_print():
 
 
 def odd_print():
-    """
-        Prints odd values.
-    """
+    """Prints odd values."""
+
     for value in range(TOTAL_RANGE):
         if value % 2 != 0:
 
@@ -59,8 +57,8 @@ def odd_print():
 
 def checker():
     """
-        Compares a final list with an ideal one.
-        In case, when they are not equal, raises an Exception.
+    Compares a final list with an ideal one.
+    In case, when they are not equal, raises an Exception.
     """
     if result != [value for value in range(TOTAL_RANGE)]:
         raise Exception

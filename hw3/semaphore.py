@@ -10,7 +10,8 @@ Second thread outputs odd numbers.
 Type of synchronization object: Semaphore.
 """
 from time import sleep
-from threading import Thread, Semaphore
+from threading import Thread
+from threading import Semaphore
 
 semaphore = Semaphore(value=1)
 
@@ -21,9 +22,8 @@ TOTAL_RANGE = 101
 
 
 def even_print():
-    """
-        Prints even values.
-    """
+    """Prints even values."""
+
     for value in range(TOTAL_RANGE):
 
         if value % 2 == 0:
@@ -38,9 +38,8 @@ def even_print():
 
 
 def odd_print():
-    """
-        Prints odd values.
-    """
+    """Prints odd values."""
+
     for value in range(TOTAL_RANGE):
         if value % 2 != 0:
             semaphore.acquire()
@@ -55,9 +54,10 @@ def odd_print():
 
 def checker():
     """
-        Compares a final list with an ideal one.
-        In case, when they are not equal, raises an Exception.
+    Compares a final list with an ideal one.
+    In case, when they are not equal, raises an Exception.
     """
+
     if result != [value for value in range(TOTAL_RANGE)]:
         raise Exception
 

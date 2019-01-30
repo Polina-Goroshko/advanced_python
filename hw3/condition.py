@@ -10,7 +10,8 @@ Second thread outputs odd numbers.
 Type of synchronization object: Condition.
 """
 from time import sleep
-from threading import Thread, Condition
+from threading import Thread
+from threading import Condition
 
 condition = Condition()
 
@@ -21,9 +22,8 @@ TOTAL_RANGE = 101
 
 
 def even_print():
-    """
-        Prints even values. Acts as a producer.
-    """
+    """Prints even values. Acts as a producer."""
+
     for value in range(TOTAL_RANGE):
 
         if value % 2 == 0:
@@ -39,10 +39,10 @@ def even_print():
 
 
 def odd_print():
-    """
-        Prints odd values. Acts as a consumer.
-    """
+    """Prints odd values. Acts as a consumer."""
+
     for value in range(TOTAL_RANGE):
+
         if value % 2 != 0:
             condition.acquire()
             condition.wait()
@@ -56,8 +56,8 @@ def odd_print():
 
 def checker():
     """
-        Compares a final list with an ideal one.
-        In case, when they are not equal, raises an Exception.
+    Compares a final list with an ideal one.
+    In case, when they are not equal, raises an Exception.
     """
     if result != [value for value in range(TOTAL_RANGE)]:
         raise Exception
