@@ -9,8 +9,8 @@ Second thread outputs odd numbers.
 
 Type of synchronization object: Timer.
 """
-from time import sleep
 from threading import Timer
+from time import sleep
 
 result = []
 

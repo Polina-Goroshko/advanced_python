@@ -10,8 +10,8 @@ Second thread outputs odd numbers.
 Type of synchronization object: Lock.
 """
 from threading import Lock
-from time import sleep
 from threading import Thread
+from time import sleep
 
 lock = Lock()
 
@@ -58,8 +58,7 @@ def odd_print():
 
 def checker():
     """Compares a final list with an ideal one.
-    In case, when they are not equal, raises an Exception.
-    """
+    In case, when they are not equal, raises an Exception."""
     if result != [value for value in range(TOTAL_RANGE)]:
         raise Exception
 
