@@ -5,8 +5,8 @@ Second process outputs odd numbers.
 Any synchronization object can be used.
 """
 
-import multiprocessing
 import logging
+import multiprocessing
 from time import sleep
 
 SLEEP_TIME = 0.1  # seconds
