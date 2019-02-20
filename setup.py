@@ -1,5 +1,5 @@
-import os
 from distutils.core import setup
+import os
 
 
 def read(file_name):
