@@ -17,8 +17,7 @@ threads = []
 
 
 def download(url):
-    """
-    Get a response from the url. Write its content to the file.
+    """Get a response from the url. Write its content to the file.
 
     :param url: link to download
     """

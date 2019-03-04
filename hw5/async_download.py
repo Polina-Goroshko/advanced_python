@@ -1,7 +1,7 @@
 """Homework5: download a bunch of files using 'asyncio', 'aiohttp'"""
 
-import asyncio
 import aiohttp
+import asyncio
 import os
 import time
 
@@ -17,8 +17,7 @@ tasks = []
 
 
 async def download(session, url):
-    """
-    Get a response from the url. Write its content to the file.
+    """Get a response from the url. Write its content to the file.
 
     :param session:
     :param url: link to download
