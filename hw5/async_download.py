@@ -19,7 +19,7 @@ tasks = []
 async def download(session, url):
     """Get a response from the url. Write its content to the file.
 
-    :param session:
+    :param session: a client session
     :param url: link to download
     """
     async with session.get(url) as response:
