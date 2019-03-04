@@ -1,7 +1,7 @@
 """Homework6: create a class, representing  money in different currencies"""
 
 
-class Money:
+class Money(object):
     """Class, representing  money in different currencies."""
 
     convert_indexes = {"RUB-BYN": 0.0325,
@@ -31,6 +31,7 @@ class Money:
 
     def __init__(self, value, currency: str = "USD"):
         """
+        
         :param value: amount of money
         :param currency: name of currency
         """
