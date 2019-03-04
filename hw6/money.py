@@ -30,7 +30,7 @@ class Money(object):
                        "EUR-JPY": 126.58}
 
     def __init__(self, value, currency: str = "USD"):
-        
+
         self.value = value
         self.currency = currency
 
