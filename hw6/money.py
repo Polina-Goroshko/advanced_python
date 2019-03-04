@@ -63,7 +63,7 @@ class Money:
         return self.__mul__(other)
 
     def convert(self, other):
-        """Convert money of currencies, listed in 'convert_indexes' dict.
+        """Convert money of currencies, listed in 'convert_indexes' dict
 
         :param other: instance of Money class
         """
