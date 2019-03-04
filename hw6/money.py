@@ -30,11 +30,7 @@ class Money(object):
                        "EUR-JPY": 126.58}
 
     def __init__(self, value, currency: str = "USD"):
-        """
         
-        :param value: amount of money
-        :param currency: name of currency
-        """
         self.value = value
         self.currency = currency
 
